@@ -1,0 +1,130 @@
+.add-story {
+  top: 0;
+  position: relative;
+}
+
+.upvote-up-arrow {
+  fill: #ccc;
+  cursor: hand;
+}
+
+.upvote-up-arrow:hover {
+  fill: #000
+}
+
+.upvote-up-arrow.voted {
+  fill: #F42461
+}
+
+.story-nav li:first-child{
+  padding-left: 2px;
+}
+.posted-time {
+  text-align: right;
+}
+.comment-count {
+  font-weight: 600;
+}
+table {
+  border: 0px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 15px
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:hover {
+  background: #f7f7f7;
+}
+
+table th,
+table td {
+  padding: .85em .65em;
+  text-align: left;
+}
+
+.xs {
+  width: 25px;
+}
+.s {
+  width: 55px;
+}
+.sm {
+  width: 100px;
+}
+.m {
+  width: 130px;
+}
+.ml {
+  width: 195px;
+}
+.l {
+  width: 260px;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

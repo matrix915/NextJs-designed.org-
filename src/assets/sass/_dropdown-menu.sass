@@ -1,0 +1,76 @@
+@import variables
+
+.ui.bottom.popup.dropdown.dark
+  background: #2B2F39
+  position: relative
+  left: -20px
+  ul
+    li
+      color: #b3b4bc
+      a
+        color: #fff
+        &:hover
+          color: #fff
+          background-color: #4F5866
+        &.disabled
+            color: #6D7B8F
+            &:hover
+              color: #6D7B8F
+              background-color: transparent
+
+.ui.bottom.popup.dropdown.light
+  background: #fff
+  +box-shadow-2
+  ul
+    li
+      color: #697079
+      a
+        color: #697079
+        &:hover
+          text-decoration: none
+          color: #4A525F
+          background-color: #EDF4FD
+        &.disabled
+            color: #aaa
+            &:hover
+              color: #aaa
+              background-color: transparent
+
+.ui.bottom.popup.dropdown
+  margin: 0
+  border: none
+  border-radius: 0 0 6px 6px
+  padding: 8px 8px 4px 8px
+  visibility: visible
+  z-index: 999
+
+  ul
+    list-style: none
+    li
+      display: block
+      font-family: $primary-font
+      font-weight: 400
+      color: #b3b4bc
+      font-size: 17px
+      margin-bottom: 8px
+      line-height: 28px
+    a
+      display: block
+      text-decoration: none
+      color: #fff
+      padding: 8px 48px 8px 20px
+      +radius(6px)
+      &:hover
+        text-decoration: none
+        color: #fff
+        background-color: #464352
+      &.disabled
+          color: #999
+          cursor: not-allowed !important
+          &:hover
+            text-decoration: none
+            color: #999
+            background-color: transparent
+
+.ui.bottom.left.basic.popup.transition.visible.dropdown
+  left: -20px !important

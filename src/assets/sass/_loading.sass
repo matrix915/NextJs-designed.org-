@@ -1,0 +1,55 @@
+@import variables
+
+.react-spinners--scale
+	text-align: center
+	padding-top: 45vh
+	&.no-padding
+		padding-top: 0
+
+.react-spinners--scale
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	bottom: 0
+	z-index: 3 !important
+	left: 0
+	right: 0
+	background-color: rgba(255,255,255,0.75)
+
+.react-spinners--scale > div
+	margin: 40vh auto 0 auto
+
+.avatar-loader
+	+radius(50px)
+	&.medium
+		+skeleton-loader(50px, 50px)
+		position: relative
+		top: -4px
+		.avatar
+			top: 0 !important
+
+
+	&.large
+		+skeleton-loader(100px, 100px)
+		.avatar 
+			position: absolute
+			top: 0
+			background: transparent !important
+
+.loading-list-data
+	display: block
+	width: 100%
+	text-align: center
+	margin-top: 50px
+	margin-bottom: 20px
+	.react-spinners--bar
+		div
+			margin: 0 auto
+
+.avatar-placeholder
+	width: 76px
+	height: 76px
+	font-size: 76px
+	line-height: 1
+	

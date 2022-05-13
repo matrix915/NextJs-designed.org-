@@ -1,0 +1,158 @@
+.career
+	h5
+		color: #86858D
+		font-size: 22px
+
+.job-list-web
+	margin-top: -22px
+	a
+		display: block
+		text-decoration: none
+		&:hover
+			text-decoration: none
+
+	.job-item
+		padding: 40px 0 35px 0
+		border-bottom: 1px solid #DEE9F5
+		&:hover
+			background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #F5F9FD 100%)
+
+		&.disabled
+			background: #f4f4f4
+			color: #999
+			.avatar, .job-logo
+				-webkit-filter: grayscale(100%)
+				filter: grayscale(100%)
+			.avatar.medium
+				opacity: .5
+		.row
+			color: #333
+		.companyName
+			font-weight: 400
+			color: #33333E
+			font-size: 17px
+		.details
+			&.empty
+				top: 13px
+			span
+				display: block
+			.title
+				color: #0d0c22
+				font-size: 20px
+				font-weight: 500
+				margin-bottom: 4px
+				position: relative
+				text-transform: capitalize
+				max-width: 300px
+				overflow: hidden
+				white-space: nowrap
+				text-overflow: ellipsis
+				top: -2px
+				+breakpoint-max($breakpoint-phone)
+					max-width: 190px
+					overflow: hidden
+					white-space: nowrap
+					text-overflow: ellipsis
+			.company
+				position: relative
+				top: -1px
+				color: rgba(38,18,53,0.7)
+				text-transform: capitalize
+				font-size: 16px !important
+				font-weight: 500
+				.react-loading-skeleton
+					top: -9px
+				+breakpoint-max($breakpoint-phone)
+					max-width: 190px
+					overflow: hidden
+					white-space: nowrap
+					text-overflow: ellipsis
+			.location, .bullet, .type, .remote
+				display: inline-block
+				color: #86858D
+				font-size: 17px
+				font-weight: 400
+			.at
+				display: inline-block
+				padding: 0 3px
+				color: #86858D
+		.publish
+			span
+				display: block
+			.publish-date
+				display: inline-block
+				color: rgba(38,18,53,0.7)
+				font-size: 14px
+		.posting-info
+			display: inline-block
+			width: calc(100% - 80px)
+			position: relative
+			top: 0px
+		.job-actions
+			text-align: right
+			.location
+				line-height: 52px
+				color: #86858D
+				+breakpoint-max($breakpoint-phone)
+					display: inline-block
+					width: 140px
+					overflow: hidden
+					white-space: nowrap
+					text-overflow: ellipsis
+			.author-controls
+				position: relative
+				top: -4px
+				a
+					display: inline-block
+
+		.action
+			display: inline-block
+			margin-top: 16px
+		.bullet
+			display: inline-block
+			color: #999
+			font-size: 14px
+			padding: 0 5px
+		.featured-job
+			display: inline-block
+			margin: 0 auto
+			position: relative
+			float: left
+			.avatar
+				margin-right: 20px
+				border-radius: 10px
+				background: none
+
+.career-header
+	color: #888
+.career-group
+	background: #fff
+	padding: 4px 20px
+	border-radius: 4px
+	margin: 10px 0 30px 0
+	border: 1px solid #ccc
+	.career-item
+		width: 100%
+		border-bottom: 1px solid #ccc
+		padding: 12px 0
+		font-size: 16px
+		&:last-child
+			border: 0
+		.position
+			width: 70%
+			display: inline-block
+			a
+				font-weight: bold
+		.location
+			width: 30%
+			display: inline-block
+			text-align: right
+
+.managing-director
+	width: 250px
+	height: 250px
+	display: block
+	position: relative
+	margin: 0 auto
+	border-radius: 100%
+	margin-bottom: 40px

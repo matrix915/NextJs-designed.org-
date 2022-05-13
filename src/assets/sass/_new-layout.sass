@@ -1,0 +1,444 @@
+@import variables
+
+.platform
+	h1
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+			letter-spacing: 0px
+	.wrapper
+		width: 100%
+		max-width: 1400px
+		display: block
+		margin: 0 auto
+		padding: 0 15px
+	.block
+		display: block
+	.horizontal-menu
+		list-style-type: none
+		margin: 30px 0 30px 0
+		&:first-child
+			margin-top: 10px !important
+			margin-bottom: -15px
+		li
+			display: inline-block
+			a
+				display: inline-block
+				text-decoration: none
+				margin: 5px 0
+				color: $medium-purple !important
+				font-weight: 400
+				font-size: 15px
+				font-family: $secondary-font
+				box-shadow: 0 0 0 2px $medium-purple inset
+				padding: 10px 18px
+				margin-bottom: 8px
+				margin-right: 10px
+				+radius(40px)
+				&.link
+					box-shadow: none
+				&.active
+					background: $medium-purple
+					box-shadow: 0 0 0 1px $medium-purple inset
+					color: #fff !important
+				&:hover
+					background: $medium-purple
+					color: #fff !important
+	.app-page-header
+		height: 360px
+		+breakpoint-min(900px)
+			min-height: 360px
+		&.large
+			height: 560px
+	.app-page-header.appy
+		background: #EAEAF2
+	.console-new
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-box-align: start
+		-ms-flex-align: start
+		align-items: flex-start
+		display: flex
+		position: relative
+		z-index: 0
+		top: 25px
+		margin: 0 auto
+		position: relative
+		width: 100%
+		max-width: 1450px
+		padding: 0 25px
+		height: calc(100%)
+		&.no-hero
+			top: 120px
+			padding-bottom: 100px
+		&.pod
+			top: 30px
+		&.mentors-page
+			top: 60px
+	.legal-stuff
+		padding-top: 60px
+		width: 100% !important
+		max-width: 900px !important
+		h3, h4
+			margin-bottom: 20px
+		h4
+			font-weight: 700
+		p
+			margin-bottom: 20px
+		ul, ol
+			margin-left: 40px
+			margin-bottom: 25px
+			li
+				font-size: 17px
+				padding-bottom: 10px
+				line-height: 26px
+
+	.platform-footer
+		display: block
+		margin: 0 auto
+		width: 100%
+		border-top: 1px solid #DFE6F0
+		min-height: 400px
+		margin-top: 100px
+		.platform-footer-wrapper
+			width: 100%
+			max-width: 1450px
+			display: block
+			margin: 0 auto
+			padding: 0 25px
+			+breakpoint-max(600px)
+			padding: 0 25px
+			hr
+				background: #DFE6F0
+				width: 100%
+				height: 1px
+				border: 0
+			ul
+				list-style-type: none
+				li
+					font-size: 18px
+					padding: 0 0 22px 0
+					&.footer-header
+						color: #586578
+						font-weight: 500
+						font-size: 20px
+						font-family: $secondary-font
+				a
+					color: #677B97
+					&:hover
+						color: #344761
+			.footer-logo
+				width: 160px
+				height: 40px
+				position: relative
+				left: -5px
+				margin-bottom: 10px
+			h2
+				font-size: 32px
+				color: #97A9C2
+				padding-right: 75px
+				line-height: 46px
+				+breakpoint-max(600px)
+					font-size: 24px
+		.platform-footer-top
+			padding: 50px 0
+		.platform-footer-bottom
+			padding: 30px 0 50px 0
+			color: #677B97
+			p
+				display: inline-block
+				width: 50%
+			.languageSelector
+				width: 170px
+				display: inline-block
+				float: right
+				position: relative
+				top: -40px
+			.input-wrapper
+				position: relative
+			.flag
+				background-image: url(https://d26p6gt0m19hor.cloudfront.net/assets/icons/us-flag-562473448c9c2a6a506b855fd2a08a9a.svg)
+				background-position-x: 50%
+				background-position-y: 50%
+				background-repeat-x: no-repeat
+				background-repeat-y: no-repeat
+				background-size: contain
+				box-sizing: border-box
+				color: rgb(193, 193, 186)
+				display: block
+				font-size: 16px
+				font-weight: 500
+				height: 20px
+				left: 2px
+				line-height: 20px
+				margin-bottom: 0px
+				margin-left: 10px
+				margin-right: 0px
+				margin-top: 0px
+				padding-bottom: 0px
+				padding-left: 10px
+				padding-right: 10px
+				padding-top: 0px
+				position: absolute
+				text-size-adjust: 100%
+				text-transform: lowercase
+				top: 24px
+				transform: matrix(1, 0, 0, 1, 0, -10)
+				width: 20px
+				z-index: 2
+			select
+				width: 170px
+				font-size: 16px
+				line-height: 1.4
+				padding: 13px 10px 13px 45px
+				border-radius: 4px
+				border: 1px solid #c1c1ba
+				margin-bottom: 0
+				font-family: $secondary-font
+				height: 48px
+				text-align: left
+				color: #333232
+				cursor: pointer
+				vertical-align: bottom
+				-webkit-appearance: none
+				-moz-appearance: none
+				appearance: none
+				position: relative
+			a
+				color: #677B97
+				&:hover
+					color: #344761
+
+			span.footer-separator
+				padding: 0 10px
+			.footer-social-icon
+				display: inline-block
+				width: 22px
+				height: 22px
+				margin-right: 18px
+				fill: #5F7A9F
+				&:hover
+					fill: #2F4460
+
+	.header-block
+		max-width: 600px
+		display: block
+		margin: 0 auto
+		text-align: center
+		top: 50px
+		position: relative
+		+breakpoint-max(768px)
+			top: 30px
+		h1
+			margin-bottom: 5px !important
+			color: #5A5A65 !important
+		p
+			max-width: 100% !important
+			font-size: 17px !important
+			line-height: 26px
+			color: #5A5A65 !important
+	.main-window
+		display: block
+		height: 100%
+		position: relative
+	.main-window .left-rail
+		height: calc(100%)
+	.header-info
+		align-self: center
+		padding-left: 0px
+		margin: 0 auto
+		text-align: center
+		margin-left: 0px
+
+.call-to-action
+	background: rgb(62, 84, 163)
+	color: #fff
+	padding: 50px 50px
+	text-align: center
+	margin: 50px 0
+	overflow: hidden
+	position: relative
+	+radius(6px)
+	&.slack
+		width: 100%
+		max-width: 1400px
+		margin: 0 auto
+		margin-top: 100px
+		&:before
+			content: ""
+			background-image: url(../images/bg-slack.svg)
+			position: absolute
+			height: 60rem
+			width: 60rem
+			bottom: -20rem
+			right: -20rem
+			transform: rotate(-40deg)
+			opacity: 0.1
+			background-repeat: no-repeat
+			background-position: center center
+			z-index: 1
+	.call-to-action-container
+		width: 70%
+		margin: 0 auto
+		z-index: 2
+		position: relative
+		.logo-slack
+			display: block
+			margin: 0 auto
+			position: relative
+			max-width: 300px
+			height: 100px
+			margin-bottom: 1rem
+		h5
+			color: #ffffff
+			font-size: 26px
+			line-height: 42px
+		h3
+			color: #ffffff
+			font-size: 22px
+			letter-spacing: 2px
+			margin-bottom: 30px
+			font-weight: 600
+		.form-container
+			max-width: 600px
+			margin: 0 auto
+			margin-top: 50px
+
+.mentor-list
+	position: relative
+	top: -20px
+	.mentor
+		border-bottom: 1px solid #DEE9F5
+		padding: 40px 20px 40px 0
+		display: block
+		position: relative
+		&:hover
+			background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #F5F9FD 100%)
+		.image-container
+			width: 250px
+			display: inline-block
+			height: 300px
+			box-sizing: border-box
+			float: left
+			.mentor-profile-image
+				width: 220px
+				height: 300px
+				position: relative
+				border-radius: 20px
+		.mentor-card-profile
+			width: calc(100% - 250px)
+			display: inline-block
+			position: relative
+			height: 300px
+			box-sizing: border-box
+			h2
+				font-size: 26px !important
+				font-weight: bold
+				margin: 4px 0 -2px 0
+				text-transform: capitalize
+			h3
+				font-size: 19px !important
+				color: #4A4A4A
+				margin: 0 0 8px 0
+			p
+				color: #4A4A4A
+				line-height: 28px
+				height: 90px
+				overflow: hidden
+				text-overflow: ellipsis
+
+			.book-online
+				display: inline-block
+				position: absolute
+				top: 20px
+				right: 0
+				color: #00B17C
+				font-size: 18px
+				font-weight: bold
+				svg
+					position: relative
+					margin-right: 5px
+					width: 24px
+					height: 24px
+
+.reset-button
+	font-weight: bold
+	color: #fff
+	font-size: 16px
+	padding: 6px 10px
+	border-radius: 22px
+	margin-left: 6px
+	position: relative
+	top: -2px
+	color: #5E6C77
+	position: relative
+	top: -3px
+	font-weight: bold !important
+
+.new-filter
+	font-weight: bold
+	color: #4868D8
+	padding: 6px 10px
+	border-radius: 22px
+	margin-left: 1px
+	position: relative
+	top: -2px
+	font-size: 15px
+
+.mentor-banner-image
+	opacity: .75
+
+.connect-big
+	font-weight: bold
+	font-size: 20px
+
+.blurred
+	/* Any browser which supports CSS3 */
+	filter: blur(3px)
+
+	/* Firefox version 34 and earlier */
+	filter: url("/blur.svg#gaussian_blur")
+
+	/* Webkit in Chrome 52, Safari 9, Opera 39, and earlier */
+	-webkit-filter: blur(3px)
+
+.pagination
+	.page-item
+		background: #EAF3FE
+		border-radius: 12px
+		padding: 8px
+		color: #4F6F98
+		font-weight: bold
+		font-size: 18px
+		&:hover
+			background: #D7E5F8
+		&.active
+			background: $pink
+			a
+				color: #fff
+				&:hover
+					cursor: default !important
+		a
+			color: #5C7FAB
+			width: 40px
+			height: 40px
+			&:hover
+				text-decoration: none
+
+.avatar-control
+	display: block
+	margin: 20px 0
+	p
+		font-weight: 500
+		color: #444
+	label
+		margin-bottom: 0
+		margin-top: 2px
+	.avatar
+		margin-left: 0px
+		display: inline-block
+	.form-input
+		display: block
+		margin-bottom: 10px
+	.avatar-control-box
+		display: inline-block 

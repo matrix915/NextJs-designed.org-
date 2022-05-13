@@ -1,0 +1,144 @@
+@import variables
+
+strong
+	&.medium
+		font-weight: 500
+.highlight
+	font-weight: bold
+	background: red
+	background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet)
+	background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet)
+	background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet)
+	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+h1, h2, h3, h4, h5
+	margin: 0 auto
+	box-sizing: border-box
+	padding: 0
+	font-weight: 400
+	font-family: $secondary-font
+
+h1
+	font-weight: 700
+	font-size: 48px
+
+h2
+	font-size: 32px !important
+h3 
+	font-size: 28px !important
+h4
+	font-size: 22px !important
+	line-height: 32px
+	&.left
+		margin: inherit
+		padding-left: 20px
+h5
+	font-size: 18px
+	font-weight: 400
+h6
+	font-size: 15px
+	font-weight: 500
+	margin: 0
+	padding: 0
+	color: #444
+p 
+	font-size: 16px
+	padding: 0
+	margin: 0
+	line-height: 32px
+	& + p 
+		margin-top: 16px
+
+ol
+	margin-left: 0
+	padding-left: 18px
+	ul
+		margin-left: 36px
+		list-style-type: disc
+
+ul
+	margin: 0
+	padding: 0
+
+	&.list 
+		margin: 1em 0 1em 1em
+		font-size: 15px
+		list-style-type: disc
+	&.nav
+		list-style: none
+	&.inline-nav
+		display: inline-block
+		list-style: none
+		position: relative
+		top: -2px
+		li 
+			display: inline-block
+			font-size: 15px
+			margin-right: 4px
+			padding: 6px 14px
+			border-radius: 30px
+			cursor: pointer
+
+			&.active
+				cursor: default
+				font-weight: bold
+			span.counter
+				background: #fff
+				color: #7E76FF
+				border-radius: 37px
+				padding: 4px 6px
+				font-size: 12px
+				position: relative
+				top: -1px
+				margin-left: 4px
+				font-family: $primary-font
+				font-weight: 600
+	&.basic-nav
+		display: inline-block
+		list-style: none
+		position: relative
+		top: -2px
+		li 
+			display: inline-block
+			font-size: 15px
+			margin-right: 4px
+			padding: 6px 14px
+			border-radius: 30px
+			cursor: pointer
+			&:first-child
+				padding-left: 0
+			&.active
+				cursor: default
+				font-weight: bold
+			span.counter
+				background: #fff
+				color: #7E76FF
+				border-radius: 37px
+				padding: 4px 6px
+				font-size: 12px
+				position: relative
+				top: -1px
+				margin-left: 4px
+				font-family: $primary-font
+				font-weight: 600
+
+	li 
+		padding: 0
+		margin: 0
+
+.subtle
+	color: #999
+.career-callout
+	//background: #A058A4
+	//border-bottom: 4px solid #fff
+	//+radius(50px)
+	//padding: 5px 0
+	font-size: 24px
+	position: relative
+	top: -10px
+	margin-left: 10px
+	opacity: .5
+.header-info-panel h1
+	margin-bottom: 10px

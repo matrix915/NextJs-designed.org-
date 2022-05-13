@@ -1,0 +1,384 @@
+.mentor-section
+	background: #f2f7fd
+	width: 100%
+	max-width: 100%
+	padding: 20px 0 50px 0
+	margin-top: 75px
+.mentor-card-link
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		.mentor-card
+			+box-shadow-2
+.portfolio-avatar-placeholder
+	background: #eee
+	display: inline-block
+	max-width: 300px
+	width: 100%
+	+radius(20px 20px 0 0)
+	margin-right: 30px
+	position: relative
+	min-height: 350px
+	+breakpoint-max(600px)
+		max-width: 100%
+		min-height: 400px
+	.availability-tag
+		position: absolute
+		bottom: -20px
+		left: 0
+		width: 100%
+		padding: 6px 0
+		text-align: center
+		color: #fff
+		+radius(0 0 20px 20px)
+		text-transform: capitalize
+		font-weight: 600
+		font-size: 17px
+		background: #aaaaaa
+		border: 2px solid #aaaaaa
+		&.available
+			background: #38BF6A
+			border: 2px solid #38BF6A
+		&.not-available
+			background: #D44F4F
+			border: 2px solid #D44F4F
+
+.portfolio
+	position: relative
+	top: 40px
+	h5
+		font-size: 18px
+		color: #555
+		font-weight: 700
+		margin-bottom: 5px
+	.portfolio-header
+		max-width: 1450px
+		padding: 0 25px
+		margin: 0 auto
+		display: block
+		position: relative
+		.breadcrumb-wrapper
+			display: block
+			position: relative
+			svg
+				width: 24px
+				height: 24px
+				position: relative
+			.icon-breadcrumb
+				width: 30px
+				height: 30px
+				display: inline-block
+				svg
+					width: 26px
+					height: 26px
+					position: relative
+				&:hover
+					fill: #000
+			.breadcrumb
+			
+				color: #222
+				font-size: 18px
+				padding: 8px 0px
+				text-transform: capitalize
+				font-weight: 600
+				+radius(5px)
+				a
+					color: #555
+					&:hover
+						color: #000
+				span
+					margin: 0 12px
+					opacity: .5
+					position: relative
+					top: -1px
+	.portfolio-body
+		position: relative
+		top: 40px
+		max-width: 1450px
+		padding: 0 25px
+		margin: 0 auto
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-flex-wrap: nowrap
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+		-webkit-justify-content: flex-start
+		-ms-flex-pack: start
+		justify-content: flex-start
+		-webkit-align-content: stretch
+		-ms-flex-line-pack: stretch
+		align-content: stretch
+		+breakpoint-max(600px)
+			width: 100%
+			display: block
+	.basic-information
+		margin: 0 auto
+		min-height: 320px
+		margin-bottom: 80px
+		h1
+			display: block
+			font-size: 32px !important
+			margin: 10px 0 0 0
+			font-weight: bold
+		h2
+			display: block
+			font-size: 22px !important
+			margin: 0px 0 10px 0
+			color: #555
+		.meet
+			color: #777
+			font-weight: 700
+			font-size: 18px
+			margin-top: 70px
+		.social-icons
+			margin: 55px 0 24px
+			.mentor-social-icon
+				width: 22px
+				height: 22px
+				display: inline-block
+				fill: #555
+				margin-right: 18px
+				&:hover
+					fill: #000
+					cursor: pointer
+		.website
+			position: relative
+			font-size: 18px
+	.portfolio-wrapper
+		display: block
+		position: relative
+		margin-bottom: 20px
+		margin: 0 auto
+		padding: 12px 0
+
+	.portfolio-section
+		width: 100%
+		margin-bottom: 60px
+		h2
+			color: #0d0c22
+			font-weight: bold
+			margin-bottom: 10px
+			font-size: 26px !important
+		h3
+			color: #0d0c22
+			font-weight: bold
+			margin-bottom: 10px
+			font-size: 22px !important
+		p
+			font-size: 18px !important
+			color: #555
+			max-width: 960px
+		.mentee-avatar-grid
+			opacity: 1
+			.mentee-avatar
+				text-align: center
+				margin-bottom: 10px
+				margin-top: 15px
+				span
+					display: block
+					margin-top: 10px
+					text-align: center
+		.review
+			border: 1px solid #E2E2DF
+			border-radius: 20px
+			width: 100%
+			padding: 25px
+			margin: 20px 0
+			.review-author
+				display: inline-block
+				position: relative
+				top: 12px
+				left: 20px
+				font-size: 18px
+				.author-name
+					font-weight: bold
+					display: block
+					margin-bottom: 4px
+
+		.portfolio-table
+			list-style-type: none
+			font-size: 18px
+			li
+				border: 1px solid #DEE9F5
+				padding: 25px
+				margin: 20px 0
+				border-radius: 20px
+				.title
+					margin-bottom: 6px
+					font-weight: bold
+					display: block
+				.employer
+					display: block
+				.employment-date
+					float: right
+					display: inline-block
+					position: relative
+					top: -48px
+					color: #777
+					&.current
+						background: #EDF4FD
+						padding: 6px 8px
+						border-radius: 6px
+						font-size: 15px
+						color: #5C7FAB
+						font-weight: bold
+						
+
+.portfolio-link
+	font-size: 16px
+	color: #666
+	padding-top: 10px
+	padding-left: 5px
+
+.main-profile
+	padding-right: 40px
+	width: calc(70% - 40px)
+	-webkit-order: 0
+	-ms-flex-order: 0
+	order: 0
+	-webkit-flex: 0 1 auto
+	-ms-flex: 0 1 auto
+	flex: 0 1 auto
+	-webkit-align-self: auto
+	-ms-flex-item-align: auto
+	align-self: auto
+	+breakpoint-max(600px)
+		width: 100%
+		padding: 0
+		display: block
+.contact-profile
+	padding-left: 70px
+	width: calc(30% + 70px)
+	-webkit-order: 0
+	-ms-flex-order: 0
+	order: 0
+	-webkit-flex: 0 1 auto
+	-ms-flex: 0 1 auto
+	flex: 0 1 auto
+	-webkit-align-self: auto
+	-ms-flex-item-align: auto
+	align-self: auto
+	position: relative
+	+breakpoint-max(600px)
+		width: 100%
+		padding: 0
+		display: block
+	.mentor-contact-box
+		top: 120px
+		display: block
+		justify-content: center
+		align-items: center
+		position: sticky
+		position: -webkit-sticky
+		width: calc(100%)
+		background: #EDF4FD
+		border-radius: 20px
+		padding: 30px
+		margin-bottom: 25px
+		+breakpoint-max(600px)
+			position: relative
+			display: block
+			top: 0
+		&.loggedIn
+			background: #E6FBEE
+		h3
+			font-weight: bold
+			font-size: 26px
+			color: #476894
+			margin: 0 0 15px 0
+			line-height: 38px
+		p
+			color: #555
+			line-height: 28px
+		.mentor-rules
+			margin: 10px 0 10px 20px
+			list-style-type: disc
+			li
+				padding: 6px 0
+				color: #555
+				line-height: 26px
+
+.simple-tags
+	list-style-type: none
+	li
+		display: inline-block
+		border: 1px solid #DEE9F5
+		margin: 0 13px 10px 0
+		padding: 12px 18px
+		border-radius: 12px
+		color: #444
+.mentor-tags
+	margin: 0 0 10px 0
+	li
+		background: #EDF4FD
+		padding: 7px 14px
+		border-radius: 20px
+		display: inline-block
+		margin: 5px 15px 5px 0
+		color: #5C7FAB
+		font-size: 16px
+		font-weight: 600
+		text-transform: capitalize
+		&:nth-child(5)
+			display: none
+		&.big
+			font-size: 18px
+			padding: 10px 20px
+			font-weight: bold
+
+.flexBox
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-flex-direction: row
+	-ms-flex-direction: row
+	flex-direction: row
+	-webkit-flex-wrap: nowrap
+	-ms-flex-wrap: nowrap
+	flex-wrap: nowrap
+	-webkit-justify-content: flex-start
+	-ms-flex-pack: start
+	justify-content: flex-start
+	-webkit-align-content: stretch
+	-ms-flex-line-pack: stretch
+	align-content: stretch
+	.splitBox
+		width: 50%
+		-webkit-order: 0
+		-ms-flex-order: 0
+		order: 0
+		-webkit-flex: 0 1 auto
+		-ms-flex: 0 1 auto
+		flex: 0 1 auto
+		-webkit-align-self: auto
+		-ms-flex-item-align: auto
+		align-self: auto
+	.thirdBox
+		width: 50%
+		-webkit-order: 0
+		-ms-flex-order: 0
+		order: 0
+		-webkit-flex: 0 1 auto
+		-ms-flex: 0 1 auto
+		flex: 0 1 auto
+		-webkit-align-self: auto
+		-ms-flex-item-align: auto
+		align-self: auto
+
+.mentoring-email-hint
+	background: #E6FBEE
+	border-radius: 20px
+	padding: 20px
+	p 
+		font-size: 15px
+		line-height: 26px
+
+.mentorImage
+	display: block
+	position: relative
+	width: 100%
+	height: 120px

@@ -1,0 +1,334 @@
+.button-container
+	display: block
+	width: 100%
+	height: 40px
+	position: relative
+	&.user-list
+		margin-top: 40px
+		text-align: center
+		.button
+			width: 300px
+button, .button
+	cursor: pointer !important
+	&:hover
+		cursor: pointer !important
+.button
+	display: inline-block
+	width: fit-content
+	font-family: $secondary-font
+	margin: 0
+	zoom: 1
+	line-height: normal
+	white-space: nowrap
+	vertical-align: middle
+	text-align: center
+	-webkit-user-drag: none
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	box-sizing: border-box
+	padding: 14px 18px !important
+	font-size: 18px
+	font-weight: 500
+	border: 1px solid rgb(214, 221, 225)
+	background-color: rgb(245, 248, 250)
+	color: rgb(181, 210, 225)
+	text-decoration: none
+	+radius(12px)
+	transition: all .3s ease
+	-webkit-transform: scale(1)
+	transform: scale(1)
+	&:focus
+		box-shadow: 0 0 0 0.2rem $blue
+	&:hover
+		text-decoration: none
+
+	span
+		display: inline-block
+	svg
+		display: inline-block
+		width: 20px
+		height: 20px
+		&.right
+			margin-left: 12px
+			margin-right: 2px
+			position: relative
+			top: -1px
+		&.left
+			margin-right: 12px
+			margin-left: 2px
+			position: relative
+			top: -1px
+		#icon-dark
+			fill: #fff
+		#icon-light
+			fill: $blue
+	&.block
+		display: block
+	&.shorty
+		padding: 5px 18px
+	&.primary
+		background-color: $pink !important
+		border: 1px solid $pink !important
+		color: #fff !important
+		&:hover
+			background-color: #FD447B !important
+			border: 1px solid #FD447B !important
+			color: #fff !important
+		&.submit
+			background-color: #34C404
+			border: 1px solid #34C404
+	&.secondary
+		background-color: #999
+		border: 1px solid #999
+		color: #fff
+	&.purple-button
+		background-color: $purple
+		border: 1px solid $purple
+		color: #fff
+		&:hover
+			background-color: $purple
+			border: 1px solid $purple
+
+	&.donate
+		background-color: #38BF6A
+		border: 1px solid #38BF6A
+		color: #fff
+		&:hover
+			background-color: #60D68C
+			border: 1px solid #60D68C
+
+	&.link
+		background-color: transparent
+		border: 1px solid transparent
+		color: $blue
+		font-weight: normal
+		&:hover, &:active, &:focus
+			box-shadow: none !important
+			border-color: transparent !important
+			outline: none
+		&.disabled
+			color: #999
+			background-color: transparent
+			border: 3px solid transparent
+		&.light
+			color: #999
+		&.no-padding
+			padding: 8px 0
+		&.no-h-padding
+			padding: 14px 0 !important
+		&.emphasize
+			font-weight: bold
+			&:hover
+				color: #FF4564
+	&.full-width
+		width: 100%
+		text-align: center
+		padding: 14px 16px
+	&.disabled
+		background-color: #aaa
+		border: 1px solid #aaa
+		color: #fff
+		opacity: .75
+		cursor: not-allowed
+	&.center
+		margin: 0 auto
+		display: block
+	&.small
+		vertical-align: middle
+		padding: 7px 12px
+	&.x-large
+		vertical-align: middle
+		padding: 14px 18px
+		font-size: 16px
+	&.right
+		float: right
+		position: relative
+
+	&.avatarlabel
+		max-width: 140px
+		display: inline-block
+		input
+			display: inline-block
+			opacity: 0
+			cursor: pointer
+			position: absolute
+.button-note
+	display: block
+	width: 250px
+	font-size: 14px
+	padding: 11px 10px
+	text-align: center
+
+.icon-bar
+	top: 50%
+	transform: translateY(-50%)
+	position: relative
+	&.right
+		float: right
+	&.left
+		float: left
+	&.reveal
+		opacity: 0
+		+transition-slow
+
+.icon-box
+	display: inline-block
+	text-align: center
+	background: #fff
+	&.reveal
+		opacity: 0
+		+transition-slow
+	&.small
+		height: 26px
+		width: 26px
+		.icon
+			width: 24px
+			height: 24px
+	&.medium
+		height: 38px
+		width: 38px
+		.icon
+			width: 28px
+			height: 28px
+	&.large
+		height: 48px
+		width: 48px
+		.icon
+			width: 38px
+			height: 38px
+	&.icon-button
+		border: 1px solid #bbb
+		+radius(3px)
+		&:hover
+			border-color: #999
+	.icon
+		margin: 0 auto
+		display: inline-block
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+
+.button-bar
+	display: inline-block
+	float: right
+	height: 60px
+	margin: 0 12px
+	a
+		display: inline-block
+		width: 40px
+		height: 60px
+
+		cursor: pointer !important
+		&.tray1
+			background-color: $light-background-color
+			border-left: 1px solid $light-gray
+		.icon-button
+			margin: 0 auto
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			display: block
+			width: 25px
+			height: 22px
+		#Group
+			fill: #ffffff
+
+.button-bar1
+	display: inline-block
+	float: right
+	height: 60px
+	margin: 0 12px
+	a
+		display: inline-block
+		width: 40px
+		height: 60px
+
+		cursor: pointer !important
+		&.tray1
+			background-color: $light-background-color
+			border-left: 1px solid $light-gray
+		.icon-button
+			margin: 0 auto
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			display: block
+			width: 25px
+			height: 22px
+		#Group
+			fill: #ffffff
+
+.social-button
+	border: 0
+	padding: 0
+	display: inline-block
+	box-sizing: border-box
+	overflow: hidden
+	border-radius: 3px
+	-webkit-appearance: button
+	cursor: pointer
+	margin: 4px
+	position: relative
+	width: 40px
+	height: 40px
+	color: #fff
+	font-family: $primary-font
+	&.big
+		display: block
+		margin: 10px 0 0
+		width: 100%
+
+	&[data-provider="facebook"]
+		background-color: #3b5998
+		&:hover
+			background-color: #2B4068
+		.social-button-icon
+			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjM2cHgiIGhlaWdodD0iNjVweCIgdmlld0JveD0iMCAwIDM2IDY1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ZmFjZWJvb2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8ZyBpZD0iZmFjZWJvb2siIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8cGF0aCBkPSJNMC45MzgsMzUgTDEwLjc1MSwzNSBMMTAuNzUxLDY0LjYyNSBMMjMuMDY0LDY0LjYyNSBMMjMuMDY0LDM1IEwzNS4zNzcsMzUgTDM1LjM3NywyMi43NSBMMjMuMDY0LDIyLjc1IEwyMy4wNjQsMTYuNSBDMjMuMDY0LDE1LjQzNyAyMy4zMTQsMTQuNjI1IDIzLjgxNCwxMy44NzUgQzI0LjM3NywxMy4xODcgMjQuOTM5LDEyLjg3NSAyNS41NjQsMTIuODc1IEwzNS4zNzcsMTIuODc1IEwzNS4zNzcsMC42MjUgTDI1LjU2NCwwLjYyNSBDMjEuNDM5LDAuNjI1IDE4LjAwMSwyLjE4OCAxNS4xMjYsNS4zMTMgQzEyLjE4OCw4LjQzOCAxMC43NTEsMTIuMTg4IDEwLjc1MSwxNi42MjYgTDEwLjc1MSwyMi43NTEgTDAuOTM4LDIyLjc1MSBMMC45MzgsMzUuMDAxIEwwLjkzOCwzNSBaIiBpZD0iU2hhcGUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==")
+			background-size: 25%
+	&[data-provider="google"]
+		background-color: #4285f4
+		&:hover
+			background-color: #315FA8
+		.social-button-icon
+			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjU3cHgiIGhlaWdodD0iNThweCIgdmlld0JveD0iMCAwIDU3IDU4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Z29vZ2xlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imdvb2dsZSIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yOS4wMDQsMzQuNDE0IEwyOS4wMDQsMjMuODEyIEw1NS42OCwyMy44MTIgQzU2LjA4LDI1LjYwOCA1Ni4zOTIsMjcuMjg4IDU2LjM5MiwyOS42NTQgQzU2LjM5Miw0NS45MjggNDUuNDc2LDU3LjQ5OCAyOS4wMzIsNTcuNDk4IEMxMy4zLDU3LjQ5OCAwLjUzMiw0NC43MyAwLjUzMiwyOC45OTggQzAuNTMyLDEzLjI2NiAxMy4zLDAuNDk4IDI5LjAzMiwwLjQ5OCBDMzYuNzI4LDAuNDk4IDQzLjE2OCwzLjMyIDQ4LjA5OCw3LjkzNiBMNDAuMDA0LDE1LjgwMiBDMzcuOTUyLDEzLjg2NCAzNC4zNiwxMS41ODQgMjkuMDMyLDExLjU4NCBDMTkuNTk4LDExLjU4NCAxMS45MDQsMTkuNDIyIDExLjkwNCwyOS4wMjYgQzExLjkwNCwzOC42MyAxOS42LDQ2LjQ2OCAyOS4wMzIsNDYuNDY4IEMzOS45NDgsNDYuNDY4IDQzLjk2NiwzOC45MTYgNDQuNzA2LDM0LjQ0IEwyOS4wMDIsMzQuNDQgTDI5LjAwMiwzNC40MTIgTDI5LjAwNCwzNC40MTQgWiIgaWQ9IlNoYXBlIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=")
+			background-size: 45%
+	&[data-provider="twitter"]
+		background-color: #55acee
+		&:hover
+			background-color: #3F79A4
+		.social-button-icon
+			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9Ijc5cHgiIGhlaWdodD0iNjVweCIgdmlld0JveD0iMCAwIDc5IDY1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+dHdpdHRlcjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgogICAgICAgIDxnIGlkPSJ0d2l0dGVyIiBza2V0Y2g6dHlwZT0iTVNMYXllckdyb3VwIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTAsNTcuNDM4IEM3LjYyNSw2Mi4yNTEgMTUuODc1LDY0LjYyNiAyNC43NSw2NC42MjYgQzMwLjUsNjQuNjI2IDM1LjkzOCw2My43NTEgNDAuOTM4LDYxLjkzOCBDNDUuOTM4LDYwLjEyNSA1MC4yNTEsNTcuNjg4IDUzLjgxMyw1NC42MjUgQzU3LjQzOCw1MS41IDYwLjUwMSw0OCA2My4wNjMsNDQuMDYyIEM2NS42MjUsNDAuMTI0IDY3LjU2MywzNS45OTkgNjguODEzLDMxLjYyNCBDNzAuMDYzLDI3LjMxMSA3MC43NTEsMjIuOTk5IDcwLjc1MSwxOC42ODYgTDcwLjc1MSwxNi41NjEgQzc0LjAwMSwxNC4xODYgNzYuNjg5LDExLjM3MyA3OC43NTEsOC4xODYgQzc1LjY4OCw5LjQ5OSA3Mi42MjYsMTAuMzc0IDY5LjUwMSwxMC43NDkgQzczLjAwMSw4LjY4NiA3NS4zNzYsNS42ODYgNzYuNTY0LDEuODExIEM3My40MzksMy42ODYgNzAuMDAxLDQuOTk5IDY2LjMxNCw1Ljc0OSBDNjMuMTI2LDIuMzc0IDU5LjE4OSwwLjYyNCA1NC41MDEsMC42MjQgQzUwLjA2MywwLjYyNCA0Ni4yNTEsMi4yNDkgNDMuMDYzLDUuMzc0IEMzOS45MzgsOC41NjIgMzguMzEzLDEyLjMxMiAzOC4zMTMsMTYuNzQ5IEMzOC4zMTMsMTcuODEyIDM4LjUwMSwxOS4wNjIgMzguODEzLDIwLjQ5OSBDMzIuMTg4LDIwLjEyNCAyNiwxOC40OTkgMjAuMTg4LDE1LjQ5OSBDMTQuNDM4LDEyLjU2MSA5LjUsOC41NjEgNS41LDMuNTYxIEM0LDYuMTI0IDMuMjUsOC44MTEgMy4yNSwxMS42ODYgQzMuMjUsMTQuNDk5IDMuOTM4LDE3LjA2MSA1LjE4OCwxOS40MzYgQzYuNTAxLDIxLjgxMSA4LjI1MSwyMy42ODYgMTAuNTAxLDI1LjE4NiBDNy44NzYsMjUuMTIzIDUuMzc2LDI0LjQzNiAzLjEyNiwyMy4xODYgTDMuMTI2LDIzLjM3NCBDMy4xMjYsMjcuMjQ5IDQuMzc2LDMwLjY4NyA2LjgxNCwzMy42MjQgQzkuMjUyLDM2LjYyNCAxMi4zNzcsMzguNDM3IDE2LjEyNywzOS4xODcgQzE0Ljc1MiwzOS41NjIgMTMuMzE0LDM5Ljc1IDExLjgxNCwzOS43NSBDMTAuNjg5LDM5Ljc1IDkuNjg5LDM5LjY4NyA4LjgxNCwzOS41IEM5Ljg3Nyw0Mi43NSAxMS43NTIsNDUuMzc1IDE0LjUwMiw0Ny41IEMxNy4zMTUsNDkuNTYzIDIwLjQ0LDUwLjYyNSAyMy45NCw1MC42ODggQzE4LjA2NSw1NS4zMTMgMTEuMzc3LDU3LjYyNiAzLjgxNSw1Ny42MjYgQzIuNTY1LDU3LjYyNiAxLjI1Miw1Ny41NjMgMC4wMDIsNTcuNDM4IEwwLDU3LjQzOCBaIiBpZD0iU2hhcGUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==")
+			background-size: 45%
+
+	.social-button-icon
+		background-color: rgba(0,0,0,0.3)
+		width: 40px
+		height: 40px
+		position: absolute
+		top: 0
+		left: 0
+		transition: background-color 0.3s
+		-webkit-transition: background-color 0.3s
+		background-repeat: no-repeat
+		background-size: 50%
+		background-position: center center
+	.social-button-text
+		box-sizing: border-box
+		display: block
+		overflow: hidden
+		width: 100%
+		padding-left: 54px
+		padding-right: 15px
+		line-height: 40px
+		text-align: left
+		text-transform: uppercase
+		text-overflow: ellipsis
+		font-size: 11px
+		font-weight: 600
+		letter-spacing: 0.7px
+		color: #fff
+		white-space: nowrap
+		transition: background 0.3s
+		-webkit-transition: background 0.3s
